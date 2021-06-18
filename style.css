@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Quicksand', sans-serif;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100vh;
+  background-color:#100e27 ;
+  color:#f1f2f6;
+}
+
+.short-calendar{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  font-weight: 500;
+  font-size: 4.6rem;
+  margin-bottom: 5rem;
+  padding: 2rem;
+  background-color: #3030303f;
+  border-radius: 0.8rem;
+  box-shadow: 1px 1px 20px rgb(18, 18, 19);
+}
+
+.short-calendar p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.short-calendar p:first-child {
+  font-size: 6rem;
+}
+
+.short-calendar p:last-child {
+  font-size: 3rem;
+}
+
+.todo-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+}
+
+.todo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.todo p {
+  text-align: center;
+}
+
+.todo input{
+  background-color: transparent;
+  border-radius: 10px;
+  border-style: none;
+  font-size: 1.4rem;
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(to right, #ffffff 0.5%, #303796);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-input-placeholder { text-align: center };
+}
+
+input::placeholder {
+  opacity: 1;
+  text-align: center;
+  font-style: italic;
+}
+
+input:focus{
+  outline: none;
+}
+
+.todo-continue{
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-continue li{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color:#cccccc;
+  font-size: 1.1rem;
+}
+
+.todo-continue button {
+  margin-right: 1rem;
+  font-size: 1.1rem;
+}
+
+.todo-continue span {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.calendar-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  color: #100e27;
+}
+
+.calendar-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  font-size: 3rem;
+}
+
+.calendar-control p {
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+}
+
+.calendar-control button {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.calendar-contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.calendar-contents table {
+  width: 80%;
+}
+
+.calendar-contents th {
+  padding-bottom: 1rem;
+}
+
+.calendar-contents td {
+  padding: 0.5rem;
+  border-radius: 100%;
+}
+
+.prev-btn,
+.next-btn,
+.date div,
+.calendar-contents td{
+  cursor: pointer;
+}
+
+.todo input {
+  cursor:text;
+}
