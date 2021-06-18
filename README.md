@@ -22,8 +22,9 @@ JavaScript / CSS / HTML
 위의 요구조건 외에 **TODO LIST** 를 추가하여 </br>
 좌측에는 todo가 우측에는 calendar를 배치하여 완성하였습니다. </br>
 
-포스팅
-https://velog.io/@haesoohaesoo/Calendar-Project
-프로젝트를 만들며 정리해둔 글의 주소입니다.
+포스팅 </br>
+https://velog.io/@haesoohaesoo/Calendar-Project </br>
+프로젝트를 만들며 정리해둔 글의 주소입니다. </br>
 
-😎 완성된 프로젝트! 클릭! https://wjdgotn77.github.io/calendar/
+😎 완성된 프로젝트! 클릭!  </br>
+https://wjdgotn77.github.io/calendar/
