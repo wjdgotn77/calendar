@@ -1,10 +1,11 @@
 # Mini Web Project - calendar
 ![image](https://user-images.githubusercontent.com/80671448/122545404-c24e0000-d068-11eb-92aa-6c8b4296b59c.png)
-바닐라코딩 프렙코스 사전학습가이드 step 4. miniweb project 중 calendar 을 진행하였습니다.
+바닐라코딩 프렙코스 사전학습가이드 </br> 
+step 4. miniweb project 중 calendar 을 진행하였습니다.</br>
 
 # 스택
 JavaScript / CSS / HTML
-
+</br>
 # TODO
 오늘의 현재 요일 표기 </br>
 오늘의 현재 날짜 표기 </br>
