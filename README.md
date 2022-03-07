@@ -1,10 +1,14 @@
 # Mini Web Project - calendar
+
 ![image](https://user-images.githubusercontent.com/80671448/122545404-c24e0000-d068-11eb-92aa-6c8b4296b59c.png)
 
 # 스택
+
 JavaScript / CSS / HTML
 </br>
+
 # 구현내용
+
 오늘의 현재 요일 표기 </br>
 오늘의 현재 날짜 표기 </br>
 오늘의 현재 월 표기 </br>
@@ -17,7 +21,8 @@ JavaScript / CSS / HTML
 특정 날짜를 클릭 했을때, 상단의 요일 및 날짜 반영하기 </br>
 
 # 추가구현내용.
+
 좌측에는 todo가 우측에는 calendar를 배치하여 완성. </br>
 
-😎 완성된 프로젝트! 클릭!  </br>
+😎 완성된 프로젝트! 클릭! </br>
 https://wjdgotn77.github.io/calendar/

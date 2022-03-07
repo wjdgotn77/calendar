@@ -1,12 +1,4 @@
-const DAYS = [
-  'SUN',
-  'MON',
-  'TUE',
-  'WED',
-  'THU',
-  'FRI',
-  'SAT'
-];
+const DAYS = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
 
 const MONTHS = [
   'JAN',
@@ -20,12 +12,12 @@ const MONTHS = [
   'SEP',
   'OCT',
   'NOV',
-  'DEC'
+  'DEC',
 ];
 
-const shortCalendar = document.querySelectorAll(".short-calendar p");
-const monthDate = document.querySelectorAll("tbody td");
-const calendarTitle = document.querySelector(".calendar-title");
+const shortCalendar = document.querySelectorAll('.short-calendar p');
+const monthDate = document.querySelectorAll('tbody td');
+const calendarTitle = document.querySelector('.calendar-title');
 
 let date = new Date();
 const displayYear = date.getFullYear();
@@ -33,45 +25,42 @@ const displayMonth = date.getMonth();
 const displayDate = date.getDate();
 const displayDay = date.getDay();
 
-
-function printCalendar(tday){  
-  
+function printCalendar(today) {
   // 전역변수의 값을 변경하지 않도록 지역변수를 선언
-  let year =tday.getFullYear();
-  let month = tday.getMonth();
-  let dateDay = tday.getDate();
-  let day = tday.getDay(); 
-  let firstDay = new Date(date.getFullYear(),date.getMonth(), 1 ).getDay();
-  let lastDate = new Date(date.getFullYear(),date.getMonth() + 1, 0).getDate();
+  let year = today.getFullYear();
+  let month = today.getMonth();
+  let dateDay = today.getDate();
+  let day = today.getDay();
+  let firstDay = new Date(date.getFullYear(), date.getMonth(), 1).getDay();
+  let lastDate = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
 
   // 현재 요일과 날짜표시
   shortCalendar[0].textContent = `${dateDay}`;
   shortCalendar[1].textContent = `${DAYS[day]}`;
-  
+
   // 현재 월과 년도 제목 표시
   calendarTitle.textContent = `${MONTHS[month]} ${year}`;
 
   // 현재 달의 1일의 요일을 인덱스 값으로 가짐.
   let idx = firstDay;
 
-  for(let i = 0; i < monthDate.length; i++){
-  monthDate[i].textContent = " ";
+  for (let i = 0; i < monthDate.length; i++) {
+    monthDate[i].textContent = ' ';
   }
 
-  for(let i = 1; i <= lastDate; i++){
+  for (let i = 1; i <= lastDate; i++) {
     monthDate[idx].textContent = i;
 
-    if( displayYear === year && displayMonth === month && displayDate === i) {
-      monthDate[idx].style.backgroundColor = "rgb(33, 150, 243, 1)";
+    if (displayYear === year && displayMonth === month && displayDate === i) {
+      monthDate[idx].style.backgroundColor = 'rgb(33, 150, 243, 1)';
     } else {
       monthDate[idx].style.color = 'black';
     }
-    
+
     updateSelectedDay(idx, firstDay);
-    
+
     idx++;
   }
-
 }
 
 function updateSelectedDay(currentIndex, firstDay) {
@@ -91,7 +80,6 @@ function updateSelectedDay(currentIndex, firstDay) {
   });
 }
 
-
 //for(const dateBtn of monthDate){
 //  dateBtn.addEventListener("click",function(event){
 //    const date = dateBtn.textContent;
@@ -99,22 +87,21 @@ function updateSelectedDay(currentIndex, firstDay) {
 //  })
 //}
 
-
-const prevBtn = document.querySelector(".prev-btn");
-  prevBtn.addEventListener("click",function(){
+const prevBtn = document.querySelector('.prev-btn');
+prevBtn.addEventListener('click', function () {
   let month = date.getMonth();
-  date.setMonth( month - 1);
+  date.setMonth(month - 1);
   printCalendar(date);
-})
+});
 
-const nextBtn = document.querySelector(".next-btn");
-nextBtn.addEventListener("click",function(){
+const nextBtn = document.querySelector('.next-btn');
+nextBtn.addEventListener('click', function () {
   let month = date.getMonth();
-  date.setMonth( month + 1);
+  date.setMonth(month + 1);
   printCalendar(date);
-})
+});
 
-function init(){
+function init() {
   printCalendar(date);
 }
 
